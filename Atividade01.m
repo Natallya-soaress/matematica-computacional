@@ -7,8 +7,8 @@ function Atividade01()
   fprintf('Raiz: %4.6f \n', xr)
   fprintf('Número de iterações: %i \n', iter)
 
-  #graficoAnimado(xl, xu, XR, FXR, iter);
-  #graficoConvergencia(iter, XR, FXR);
+  graficoAnimado(xl, xu, XR, FXR, iter);
+  graficoConvergencia(iter, XR, FXR);
 endfunction
 
 function y = f(x)
@@ -25,7 +25,6 @@ function [iter, xr, XR, FXR] = bissecao(xl, xu)
 
   for iter = 1:imax
     xr = (xl+xu)/2;
-    #xr = xu - (f(xu) * (xl - xu) / (f(xl) - f(xu)));
     XR(iter) = xr;
     FXR(iter) = f(xr);
 
