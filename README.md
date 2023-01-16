@@ -1,2 +1,2 @@
 # Matemática computacional
-Repositório destinado às atividades de matemática computacional
+Repositório destinado às atividades da matéria de matemática computacional
